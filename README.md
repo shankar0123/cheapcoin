@@ -1,0 +1,1 @@
+# cheapcoin - A Tiny Blockchain
