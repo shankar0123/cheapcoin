@@ -21,3 +21,14 @@ def create_genesis_block():
 # Test it
 genesis_block = create_genesis_block()
 print(f"Genesis Block Hash: {genesis_block.hash}")
+
+# Add function to generate new blocks
+def create_new_block(previous_block, data):
+    index = previous_block.index + 1
+    timestamp = time.time()
+    previous_hash = previous_block.hash
+    return Block(index, timestamp, data, previous_hash)
+
+# Test block creation
+new_block = create_new_block(genesis_block, "First transaction data")
+print(f"New Block Hash: {new_block.hash}")
