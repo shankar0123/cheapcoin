@@ -1,7 +1,7 @@
-# 🪙 CheapCoin: A Tiny Blockchain & Cryptocurrency in Python  
+# 🪙 cheapcoin: A Tiny Blockchain & Cryptocurrency in Python  
 
-## 📌 What is CheapCoin?  
-CheapCoin is a **minimalistic blockchain implementation** written in **Python** that demonstrates the **fundamentals of how cryptocurrencies work**. It includes:  
+## 📌 What is cheapcoin?  
+cheapcoin is a **minimalistic blockchain implementation** written in **Python** that demonstrates the **fundamentals of how cryptocurrencies work**. It includes:  
 
 ✅ A **basic blockchain structure**  
 ✅ **Proof-of-Work (PoW) mining** ⛏️  
@@ -10,7 +10,7 @@ CheapCoin is a **minimalistic blockchain implementation** written in **Python** 
 
 ---
 
-## ⚙️ How CheapCoin Works  
+## ⚙️ How cheapcoin Works  
 
 ### 🔗 1. The Blockchain Structure  
 A **blockchain** is a **linked list of blocks**, where each block contains:  
@@ -55,7 +55,7 @@ Without a control mechanism, blocks could be **created instantly**, making the b
 - **Prevents abuse** 🛑  
 - **Ensures security** 🔐  
 
-🔹 **CheapCoin’s PoW Algorithm:**  
+🔹 **cheapcoin’s PoW Algorithm:**  
 - A **miner must find a number (`proof`)** such that:  
   ```bash
   (proof + previous_proof) % 9 == 0
@@ -63,7 +63,7 @@ Without a control mechanism, blocks could be **created instantly**, making the b
 - **Miners brute-force different numbers** until they find a valid one.  
 - The **difficulty** is adjustable by changing the rule.  
 
-📌 **CheapCoin’s PoW Function:**  
+📌 **cheapcoin’s PoW Function:**  
 ```python
 def proof_of_work(last_proof):
     proof = 0
@@ -78,7 +78,7 @@ def proof_of_work(last_proof):
 ### 🏗️ 4. The Mining Process  
 Miners **solve the PoW challenge**, creating a **new block** that is added to the chain. Mining also **rewards miners** by including a **special transaction** in the new block.  
 
-📌 **Mining API in CheapCoin:**  
+📌 **Mining API in cheapcoin:**  
 ```python
 @app.route('/mine', methods=['GET'])
 def mine_block():
@@ -101,11 +101,11 @@ def mine_block():
 ---
 
 ### 💳 5. Transactions  
-Users can **send & receive CheapCoin** via transactions.  
+Users can **send & receive cheapcoin** via transactions.  
 Each transaction contains:  
 - **📤 Sender Address**  
 - **📥 Receiver Address**  
-- **💰 Amount of CheapCoin**  
+- **💰 Amount of cheapcoin**  
 
 📌 **Transaction Handling API:**  
 ```python
@@ -128,7 +128,7 @@ curl -X POST http://127.0.0.1:5000/transaction      -H "Content-Type: applicatio
 ---
 
 ### 🌍 6. Viewing the Blockchain  
-CheapCoin provides an **API to retrieve the entire blockchain**.  
+cheapcoin provides an **API to retrieve the entire blockchain**.  
 
 📌 **Blockchain API:**  
 ```python
@@ -151,7 +151,7 @@ curl http://127.0.0.1:5000/blockchain
 
 ---
 
-## 🔮 **Next Steps for CheapCoin**  
+## 🔮 **Next Steps for cheapcoin**  
 ✅ **Add Wallets & Digital Signatures** 🔐  
 ✅ **Deploy the Network on Multiple Machines** 🌍  
 ✅ **Implement a Real Consensus Algorithm** (Replacing longest-chain rule) 🤝  
