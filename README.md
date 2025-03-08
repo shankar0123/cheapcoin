@@ -1,4 +1,4 @@
-cheapcoin: A Tiny Blockchain & Cryptocurrency in Python
+# cheapcoin: A Tiny Blockchain & Cryptocurrency in Python
 
 What is cheapcoin?
 
