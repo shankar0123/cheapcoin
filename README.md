@@ -198,13 +198,3 @@ curl http://127.0.0.1:5000/blockchain
 CheapCoin is a simplified blockchain with mining and transactions.  
 It demonstrates the fundamentals of PoW, block linking, and hashing.  
 Next steps: Make it decentralized, add wallets, and scale it up.  
-
----
-
-## License  
-This project is open-source and available under the MIT License.  
-
----
-
-## Like This Project?  
-Give it a star on GitHub and contribute to its development!  
